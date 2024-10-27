@@ -4,6 +4,7 @@ flowchart :
 
 
 ![foto flowchart](https://github.com/user-attachments/assets/a7b05ca0-9d9b-4719-8910-081cc03664e8)
+ 
   penjelasan flowchart: 
 1.	Mulai: 
     •	 Titik awal dari proses. Flowchart dimulai di sini. 
@@ -57,6 +58,7 @@ Flowchart dan kode python untuk menentukan bilangan terbesar dari N bilangan yan
 
 
 ![foto flowchart (2)](https://github.com/user-attachments/assets/65523f8f-aefd-4394-a0d0-ec7e9498599c)
+  
   penjelasan flowchart : 
 1.	Mulai : o Proses dimulai di sini. Ini adalah titik awal dari flowchart. 
 2.	Inisialisasi : o max_number = -∞: Variabel max_number diinisialisasi dengan nilai terkecil (∞). Ini bertujuan agar angka pertama yang dimasukkan selalu lebih besar, 
