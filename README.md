@@ -27,19 +27,20 @@ flowchart :
 6.	Tampilkan Hasil: 
    •	Di langkah ini, hasil yang menunjukkan bilangan terbesar dari A, B, atau C ditampilkan kepada pengguna. 
 7.	Selesai: 
-  •	Proses berakhir di sini. Flowchart telah menyelesaikan tugasnya untuk menentukan bilangan terbesar. 
+  •	Proses berakhir di sini. Flowchart telah menyelesaikan tugasnya untuk menentukan bilangan terbesar.
+
 kode python : 
-    
-    # Menentukan bilangan terbesar
-    if bilangan1 >= bilangan2 and bilangan1 >= bilangan3:
-        terbesar = bilangan1
-    elif bilangan2 >= bilangan1 and bilangan2 >= bilangan3:
-        terbesar = bilangan2
-    else:
-        terbesar = bilangan3
-    
-    # Menampilkan hasil
-    print("Bilangan terbesar adalah:", terbesar)
+        
+            # Menentukan bilangan terbesar
+        if bilangan1 >= bilangan2 and bilangan1 >= bilangan3:
+            terbesar = bilangan1
+        elif bilangan2 >= bilangan1 and bilangan2 >= bilangan3:
+            terbesar = bilangan2
+        else:
+            terbesar = bilangan3
+        
+        # Menampilkan hasil
+        print("Bilangan terbesar adalah:", terbesar)
 
 penjelasan kode: 
 1. Definisi Fungsi terbesar_dari_3(a, b, c):  
@@ -76,10 +77,12 @@ Flowchart dan kode python untuk menentukan bilangan terbesar dari N bilangan yan
 7.	Kembali ke Input: o Setelah memeriksa dan mungkin memperbarui max_number, program kembali ke langkah input untuk meminta angka berikutnya dari pengguna. 
 8.	Tampilkan max_number : o Setelah pengguna memasukkan 0, program menampilkan hasil akhir, yaitu max_number, yang merupakan angka terbesar dari semua angka yang telah 
    dimasukkan. 
-9.	Selesai : o 	Menandakan akhir dari proses. Setelah hasil ditampilkan, program selesai. 
+9.	Selesai : o 	Menandakan akhir dari proses. Setelah hasil ditampilkan, program selesai.
+   
 kode python : 
 
-       # Loop untuk input bilangan
+
+         # Loop untuk input bilangan
         while True:
             bilangan = float(input("Masukkan bilangan (masukkan 0 untuk selesai): "))
             
@@ -113,7 +116,52 @@ penjelasan kode python :
 8.	Memanggil Fungsi terbesar_dari_N(): Fungsi dipanggil, dan hasilnya (bilangan terbesar) disimpan di variabel hasil.  
 9.	Mencetak Hasil: Baris print(f"Bilangan terbesar adalah: {hasil}") akan mencetak bilangan terbesar yang ditemukan dari input pengguna.
 
+flowchart pada pertemuan ke 5 : 
+![flowchart pertemuan ke 5](https://github.com/user-attachments/assets/25066987-0e3f-43cb-b4ad-ff05e0aa7ee7)
 
+penjelasan flowchart : 
+Mulai:
+1. Langkah awal program. Menandakan bahwa proses akan dimulai.
+   Inisialisasi max_value = 0: Di sini, variabel max_value diinisialisasi dengan nilai 0. Ini berfungsi sebagai tempat penyimpanan nilai maksimum yang akan ditemukan 
+   selama input.
+2. Input n dari pengguna:
+   Program meminta pengguna untuk memasukkan angka. Nilai yang dimasukkan akan disimpan dalam variabel n.
+   Apakah n = 0?:
+3. Ini adalah langkah keputusan. Program memeriksa apakah nilai n yang dimasukkan adalah 0.
+   Jika Ya: Program melanjutkan ke langkah 7 untuk mencetak nilai maksimum dan mengakhiri program.
+   Jika Tidak: Program melanjutkan ke langkah 5.
+4. Apakah n > max_value?:
+   Program memeriksa apakah angka yang dimasukkan (n) lebih besar dari max_value saat ini.
+   Jika Ya: max_value diperbarui dengan nilai n.
+   Jika Tidak: Program tidak melakukan perubahan pada max_value.
+   Kembali ke langkah 3:
+5. Setelah memeriksa dan mungkin memperbarui max_value, program kembali ke langkah 3 untuk meminta input angka dari pengguna lagi.
+   Cetak "Nilai maksimum adalah: max_value":
+6. Setelah pengguna memasukkan 0, program mencetak nilai maksimum yang telah ditemukan selama proses input.
+   Selesai:
+7. Menandakan akhir dari program. Semua proses telah diselesaikan.
 
+kode python : 
+
+          max_value = 0
+          
+                   while True:
+                   n = int(input("Enter a number(0 to stop):"))
+             
+               if n == 0:
+                   break 
+           
+               if n > max_value:
+                   max_value = n 
+           
+           print("The maximum value is:",max_value)
+
+penjelasan kode : 
+1. inisialisasi: max_value diinisialisasi dengan nilai 0.
+2. Loop: Program memasuki loop tak hingga (while True).
+3. Input Pengguna: Meminta pengguna untuk memasukkan angka.
+4. Kondisi Berhenti: Jika pengguna memasukkan 0, loop akan berhenti.
+5. Pembaruan Nilai Maksimum: Jika angka yang dimasukkan lebih besar dari max_value, maka max_value akan diperbarui.
+6. Output: Setelah loop berakhir, program mencetak nilai maksimum yang ditemukan.
 
 
